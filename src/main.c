@@ -139,7 +139,7 @@ int main(void)
 	STATUS |= 0x08;
 
 	/*
-	 * Enable the USI
+	 * Enable the USI, setting it to use Timer/Counter 0 as the clock
 	 */
 	CONTROL |= (1 << USIOIE) | (1 << USICS0) | (0 << USIWM1) | (1 << USIWM0);
 
